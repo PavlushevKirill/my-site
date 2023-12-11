@@ -1,0 +1,131 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    margin: 0;
+    font-family: calibri;
+}
+/* header */
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 5vw;
+    padding-top: 0.4vw;
+    padding-bottom: 0.4vw;
+    background: rgb(0, 0, 0);
+    background-size: 100vw;
+}
+.header-img-block{
+    display: flex;
+    align-items: center;
+    width: 4vw;
+    height: min-content;
+}
+.header-img{
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50vw;
+    list-style-type: none;
+    margin: 0;
+}
+.header-menu-item{
+    display: flex;
+    width: min-content;
+    color: white;
+    text-decoration: none;
+    height: 2vw;
+    font-size: 2vw;
+}
+.header-menu-item:hover{
+    text-decoration: underline;
+    color: white;
+}
+.active{
+    font-weight: bold;
+}
+/*  content  */
+#main-text-block{
+    background: black;
+    margin-right: 5vw;
+    padding: 1vw 1vw 1vw 1vw;
+    border-radius: 2vw;
+    padding-bottom: 1.4vw;
+}
+.main-text{
+    font-weight: 500;
+    font-size: 4.3vw;  
+    margin-top: 0;
+    margin-bottom: 3vw;
+}
+.quote{
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.4vw;
+    opacity: 0.85;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    width: 100vw;
+    height: 54vw;
+    background: url(../img/background.jpg) no-repeat center;
+    background-size: 100vw;
+}
+/* footer */
+footer{
+    width: 100vw;
+    background-color: black;
+}
+.footer-text{
+    font-size: 1.4vw;
+    margin-left: 2vw;
+}
+@media screen and (max-width: 760px){
+
+    /* header */
+    header{
+        height: min-content;
+    }
+    .header-img-block{
+        display: flex;
+        align-items: center;
+        width: 10vw;
+        height: 20vw;
+    }
+    .header-img{
+        width: 100%;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: start;
+        width: 46vw;
+        height: 16vw;
+    }
+    .header-menu-item{
+        height: 3vw;
+        font-size: 3vw;
+    }
+    /*  content  */
+    .main-text{
+        font-size: 6vw;  
+    }
+    .quote{
+        font-size: 2.5vw;
+        opacity: 0.95;
+    }
+    /*  footer */
+    .footer-text{
+        font-size: 2.5vw;
+    }
+}
